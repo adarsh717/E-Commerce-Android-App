@@ -1,5 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
+    <!-- Basic -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="light_gray">#E0E0E0</color>
+    <color name="dark_gray">#424242</color>
+
+    <!-- Purple / Indigo -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_300">#9C6BFF</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="deep_purple">#673AB7</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="lavender">#B39DDB</color>
+
+    <!-- Blue -->
+    <color name="blue_200">#90CAF9</color>
+    <color name="blue_400">#42A5F5</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="blue_700">#1976D2</color>
+    <color name="sky_blue">#03A9F4</color>
+    <color name="navy_blue">#1A237E</color>
+    <color name="teal_blue">#00BCD4</color>
+
+    <!-- Green -->
+    <color name="green_200">#A5D6A7</color>
+    <color name="green_400">#66BB6A</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="green_700">#388E3C</color>
+    <color name="mint_green">#2ECC71</color>
+    <color name="lime_green">#8BC34A</color>
+    <color name="emerald_green">#009688</color>
+
+    <!-- Yellow / Orange -->
+    <color name="yellow_300">#FFD54F</color>
+    <color name="yellow_500">#FFEB3B</color>
+    <color name="amber">#FFC107</color>
+    <color name="orange_400">#FFA726</color>
+    <color name="orange_500">#FF9800</color>
+    <color name="deep_orange">#FF5722</color>
+    <color name="gold">#FBC02D</color>
+
+    <!-- Red / Pink -->
+    <color name="red_300">#E57373</color>
+    <color name="red_500">#F44336</color>
+    <color name="red_700">#D32F2F</color>
+    <color name="pink_300">#F06292</color>
+    <color name="pink_500">#E91E63</color>
+    <color name="rose_pink">#FF5C8D</color>
+    <color name="hot_pink">#FF4081</color>
+
+    <!-- Cyan / Aqua -->
+    <color name="cyan">#00BCD4</color>
+    <color name="aqua">#00E5FF</color>
+    <color name="turquoise">#1DE9B6</color>
+
+    <!-- Brown / Neutral -->
+    <color name="brown">#795548</color>
+    <color name="light_brown">#A1887F</color>
+    <color name="cream">#FFF3E0</color>
+    <color name="beige">#F5F5DC</color>
+
+    <!-- Premium / Gradient Friendly -->
+    <color name="violet_start">#667EEA</color>
+    <color name="violet_end">#764BA2</color>
+
+    <color name="purple_start">#8E2DE2</color>
+    <color name="purple_end">#4A00E0</color>
+
+    <color name="pink_start">#FF416C</color>
+    <color name="pink_end">#FF4B2B</color>
+
+    <color name="blue_start">#36D1DC</color>
+    <color name="blue_end">#5B86E5</color>
+
+    <color name="green_start">#11998E</color>
+    <color name="green_end">#38EF7D</color>
+
+    <color name="orange_start">#F7971E</color>
+    <color name="orange_end">#FF512F</color>
+
+    <color name="sunset_start">#FA709A</color>
+    <color name="sunset_end">#FEE140</color>
+
+    <color name="sky_start">#43CEA2</color>
+    <color name="sky_end">#185A9D</color>
+
+    <!-- Backgrounds -->
+    <color name="bg_light">#F8F9FA</color>
+    <color name="bg_soft_blue">#EEF4FF</color>
+    <color name="bg_soft_purple">#F3E8FF</color>
+    <color name="bg_soft_green">#E8F5E9</color>
+    <color name="bg_soft_orange">#FFF3E0</color>
+
 </resources>

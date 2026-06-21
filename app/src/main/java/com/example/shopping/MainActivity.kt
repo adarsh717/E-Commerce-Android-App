@@ -3,6 +3,8 @@ package com.example.shopping
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var recyclerView : RecyclerView
     private lateinit var adapter : ProductAdapter
+    private lateinit var fetchBtn : Button
 
     private val productlist = mutableListOf<Product>()
 
@@ -34,6 +37,8 @@ class MainActivity : AppCompatActivity() {
         }
         recyclerView =findViewById(R.id.recyclerView)
 
+        fetchBtn = findViewById(R.id.fetchBtn)
+
 
 
         adapter = ProductAdapter(productlist) { product ->
@@ -48,7 +53,12 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = GridLayoutManager(this,2)
         recyclerView.adapter = adapter
 
-        getProductFromApi()
+
+        fetchBtn.setOnClickListener {
+            fetchBtn.visibility = View.GONE
+            getProductFromApi()
+
+        }
 
     }
 
