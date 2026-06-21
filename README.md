@@ -36,10 +36,10 @@ This project is built for practicing **API integration, RecyclerView, Glide imag
 This app uses the **FakeStore API** to fetch product data.
 
 **Base URL:**  
-https://fakestoreapi.com/
+https://https://dummyjson.com/
 
 **Products Endpoint:**  
-https://fakestoreapi.com/products
+https://dummyjson.com/products
 
 ---
 
