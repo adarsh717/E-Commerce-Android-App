@@ -1,5 +1,6 @@
 package com.example.shopping
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.enableEdgeToEdge
@@ -35,7 +36,15 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        adapter = ProductAdapter(productlist)
+        adapter = ProductAdapter(productlist) { product ->
+            val intent = Intent(this, ProductDetailScreen::class.java)
+            intent.putExtra("price",product.price)
+            intent.putExtra("category",product.category)
+            intent.putExtra("description",product.description)
+            intent.putExtra("image",product.thumbnail)
+            startActivity(intent)
+
+        }
         recyclerView.layoutManager = GridLayoutManager(this,2)
         recyclerView.adapter = adapter
 

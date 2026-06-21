@@ -11,7 +11,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
 
-class ProductAdapter(private var productList: MutableList<Product>):
+class ProductAdapter(
+    private var productList: MutableList<Product>,
+    private var onItemClick : (Product) -> Unit
+):
     RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
     class ProductViewHolder(itemView : View): RecyclerView.ViewHolder(itemView){
@@ -35,10 +38,13 @@ class ProductAdapter(private var productList: MutableList<Product>):
 
         holder.title.text = product.title
         holder.price.text = "$ "+product.price
-
             Glide.with(holder.itemView.context)
                 .load(product.thumbnail)
                 .into(holder.image)
+
+        holder.itemView.setOnClickListener {
+            onItemClick(product)
+        }
 
     }
 
